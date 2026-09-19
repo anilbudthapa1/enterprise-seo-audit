@@ -1,0 +1,8 @@
+interface:
+  display_name: "Enterprise SEO Audit"
+  short_description: "Evidence-driven technical, search, local and implementation SEO auditing with guarded remediation."
+  brand_color: "#0F172A"
+  default_prompt: "Use the enterprise-seo-audit skill to audit the requested site or repository. Start read-only, distinguish observed evidence from inference, correlate findings into root causes, and require approval for high-risk SEO mutations before implementation."
+
+policy:
+  allow_implicit_invocation: true
