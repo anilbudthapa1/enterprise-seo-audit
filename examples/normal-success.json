@@ -1,0 +1,10 @@
+{
+  "task_id": "SEO-2026-000184",
+  "skill": "enterprise-seo-audit",
+  "skill_version": "1.0.0",
+  "state": "COMPLETED",
+  "mode": "AUDIT",
+  "target": {"site": "https://example.com"},
+  "summary": "47 canonical redirect findings correlated to one template-level root cause.",
+  "evidence_status": "persisted"
+}
