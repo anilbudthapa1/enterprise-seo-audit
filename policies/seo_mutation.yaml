@@ -1,0 +1,24 @@
+version: 1
+rules:
+  - id: SEO-ROBOTS-001
+    description: Prevent unapproved production robots restrictions.
+    trigger: {environment: production, resource: robots_txt, effect: reduces_crawl_access}
+    decision: require_approval
+    require: [impact_analysis, previous_state, rollback_plan, post_change_fetch]
+  - id: SEO-INDEX-001
+    description: Prevent unapproved indexability reduction.
+    trigger: {environment: production, mutation: [noindex, x_robots_noindex]}
+    decision: require_approval
+  - id: SEO-CANON-001
+    description: Protect mass canonical changes.
+    trigger: {resource: canonical, affected_urls_gte: 10}
+    decision: require_approval
+  - id: SEO-REDIRECT-001
+    description: Validate mass redirect changes.
+    trigger: {resource: redirect, affected_urls_gte: 10}
+    decision: require_approval
+    require: [redirect_map_validation, loop_detection, target_status_validation, rollback_plan]
+  - id: SEO-SPAM-001
+    description: Prohibit manipulative SEO.
+    trigger: {operation: [fake_reviews, cloaking, doorway_pages, hidden_keyword_content, artificial_link_scheme]}
+    decision: deny
