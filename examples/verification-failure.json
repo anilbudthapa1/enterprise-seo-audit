@@ -1,0 +1,8 @@
+{
+  "task_id": "SEO-2026-000185",
+  "state": "IMPLEMENTED_NOT_VERIFIED",
+  "claim": "Canonical problem fixed",
+  "verification": "FAIL",
+  "observed": "Canonical still points to redirecting URL",
+  "completion_allowed": false
+}
