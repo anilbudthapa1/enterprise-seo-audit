@@ -1,0 +1,17 @@
+name: full-audit
+mode: AUDIT
+steps:
+  - scope
+  - discover_sources
+  - collect_http_robots_sitemaps
+  - crawl
+  - render_sample
+  - collect_available_first_party_data
+  - normalize
+  - evaluate_rules
+  - correlate
+  - prioritize
+  - verify_evidence
+  - independent_review
+  - persist_evidence
+  - complete
