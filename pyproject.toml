@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "enterprise-seo-audit"
-version = "1.1.1"
-description = "Evidence-driven enterprise SEO audit skill guards and schemas"
+version = "1.2.0"
+description = "Evidence-driven enterprise SEO audit, scoring and report-generation skill"
 requires-python = ">=3.11"
 license = "Apache-2.0"
 authors = [
