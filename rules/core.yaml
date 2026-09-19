@@ -1,0 +1,27 @@
+version: 1
+rules:
+  - id: ROBOTS-001
+    domain: crawlability
+    name: Production site blocked by robots
+    condition: robots_disallow_all
+    severity: critical
+  - id: IDX-001
+    domain: indexability
+    name: Site-wide noindex
+    condition: sitewide_noindex
+    severity: critical
+  - id: CAN-004
+    domain: canonicalization
+    name: Canonical target redirects
+    condition: canonical_status_3xx
+    severity: high
+  - id: REDIR-003
+    domain: redirects
+    name: Redirect loop
+    condition: redirect_loop
+    severity: critical
+  - id: SITE-005
+    domain: sitemap
+    name: Sitemap URL is noncanonical
+    condition: sitemap_url_noncanonical
+    severity: medium
