@@ -1,0 +1,17 @@
+name: implementation
+mode: OPTIMIZE
+steps:
+  - scope
+  - discover_current_state
+  - plan
+  - impact_analysis
+  - policy_evaluation
+  - approval_if_required
+  - snapshot
+  - implement
+  - capture_diff
+  - compare_scope
+  - verify
+  - independent_review
+  - persist_evidence
+  - complete
