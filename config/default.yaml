@@ -1,0 +1,15 @@
+skill: enterprise-seo-audit
+version: 1.0.0
+profile: STANDARD
+crawl:
+  max_urls: 10000
+  concurrency: 5
+  timeout_seconds: 15
+render:
+  enabled: true
+  sample_strategy: stratified
+evidence:
+  persist: true
+  redact_secrets: true
+authorization:
+  production_writes: approval
